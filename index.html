@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QA Mentor</title>
+    <meta
+      name="description"
+      content="Portfolio Quality Assurance (ISTQB Certified)"
+    />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <!-- Google Analytics (ganti G-XXXXXXXXXX dengan ID Anda) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-XXXXXXXXXX");
+    </script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="assets/js/main.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrapper">
+        <div class="brand">QA Mentor</div>
+        <nav id="mainNav" class="nav">
+          <a href="#home">Home</a>
+          <a href="#projects">Projects</a>
+          <a href="#experiences">Experiences</a>
+          <a href="#contact">Contact Me</a>
+        </nav>
+        <button
+          class="nav-toggle"
+          aria-label="Toggle navigation"
+          id="navToggle"
+        >
+          ☰
+        </button>
+        <div
+          class="lang-toggle"
+          style="display: flex; gap: 8px; align-items: center"
+        >
+          <button
+            id="langID"
+            class="lang-btn"
+            aria-label="Switch to Bahasa Indonesia"
+          >
+            ID
+          </button>
+          <button id="langEN" class="lang-btn" aria-label="Switch to English">
+            EN
+          </button>
+          <button id="modeToggle" aria-label="Toggle dark/light mode">
+            🌞
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="fadein-wrapper">
+        <!-- Home -->
+        <section id="home" class="hero section" data-reveal="up">
+          <div class="container hero-inner">
+            <div class="hero-text">
+              <h1 class="hero-title">
+                Hai, saya <span class="accent">Hendri Christianto</span>
+              </h1>
+              <p class="lead hero-desc">
+                Seorang <strong>Quality Assurance Engineer</strong> dengan
+                sertifikasi <strong>ISTQB</strong>. Fokus pada
+                <em>test automation</em>, peningkatan kualitas produk, dan
+                continuous improvement.
+              </p>
+              <div class="hero-cta">
+                <a href="#projects" class="btn primary hero-projects"
+                  >Lihat Projects</a
+                >
+                <a href="#contact" class="btn outline hero-btn">Booking 1:1</a>
+              </div>
+              <div class="badges">
+                <span class="badge">ISTQB® Certified Tester</span>
+                <span class="badge">Automation</span>
+                <span class="badge">API Testing</span>
+                <span class="badge">CI/CD</span>
+              </div>
+            </div>
+          </div>
+          <div class="scroll-indicator">Scroll ↓</div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="section" data-reveal="up">
+          <div class="container">
+            <h2 class="section-title projects-title">Projects & Templates</h2>
+            <p class="section-intro projects-desc">
+              Beberapa contoh pekerjaan / eksperimen saya serta template
+              automation testing gratis yang bisa Anda unduh.
+            </p>
+
+            <div class="projects-grid" id="projectList">
+              <!-- Example Project Card -->
+              <article class="project-card">
+                <h3>Automation Framework: Playwright (JS)</h3>
+                <p>
+                  Contoh struktur dasar automation UI + API menggunakan
+                  Playwright + laporan sederhana.
+                </p>
+                <div class="tags">
+                  <span>Playwright</span><span>JavaScript</span
+                  ><span>UI/API</span>
+                </div>
+                <div class="actions">
+                  <a
+                    class="btn small btn-download"
+                    href="templates/automation/playwright-js/README.md"
+                    download
+                    >Download</a
+                  >
+                  <button
+                    class="btn ghost small btn-detail"
+                    data-toggle="details"
+                  >
+                    Detail
+                  </button>
+                </div>
+                <div class="details" hidden>
+                  <ul>
+                    <li>Page Object Model dasar</li>
+                    <li>Config environment</li>
+                    <li>Contoh test API sederhana</li>
+                  </ul>
+                </div>
+              </article>
+
+              <article class="project-card">
+                <h3>Automation Framework: Selenium + TestNG (Java)</h3>
+                <p>
+                  Kerangka minimal untuk UI regression dengan Selenium, TestNG &
+                  reporting.
+                </p>
+                <div class="tags">
+                  <span>Selenium</span><span>Java</span><span>TestNG</span>
+                </div>
+                <div class="actions">
+                  <a
+                    class="btn small btn-download"
+                    href="templates/automation/selenium-java/README.md"
+                    download
+                    >Download</a
+                  >
+                  <button
+                    class="btn ghost small btn-detail"
+                    data-toggle="details"
+                  >
+                    Detail
+                  </button>
+                </div>
+                <div class="details" hidden>
+                  <ul>
+                    <li>Base test class</li>
+                    <li>Driver management</li>
+                    <li>Sample assertion</li>
+                  </ul>
+                </div>
+              </article>
+
+              <article class="project-card">
+                <h3>Postman Collection: API Regression</h3>
+                <p>
+                  Kumpulan request + environment contoh untuk API regression dan
+                  Newman CLI.
+                </p>
+                <div class="tags">
+                  <span>Postman</span><span>API</span><span>Newman</span>
+                </div>
+                <div class="actions">
+                  <a
+                    class="btn small btn-download"
+                    href="templates/automation/postman-api/example-collection.json"
+                    download
+                    >Download</a
+                  >
+                  <button
+                    class="btn ghost small btn-detail"
+                    data-toggle="details"
+                  >
+                    Detail
+                  </button>
+                </div>
+                <div class="details" hidden>
+                  <ul>
+                    <li>Pre-request & test scripts</li>
+                    <li>Environment vars</li>
+                    <li>Newman run contoh</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- Experiences -->
+        <section id="experiences" class="section alt" data-reveal="up">
+          <div class="container">
+            <h2 class="section-title exp-title">Experiences</h2>
+            <p class="section-intro exp-desc">
+              Ringkasan perjalanan profesional saya di bidang Quality Assurance.
+            </p>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="time">2024 - Sekarang</div>
+                <div class="content">
+                  <h3>Quality Assurance Engineer - [Perusahaan A]</h3>
+                  <ul>
+                    <li>
+                      Membangun & memelihara test automation (UI + API) yang
+                      mengurangi waktu regression >50%.
+                    </li>
+                    <li>
+                      Integrasi pipeline CI/CD (GitHub Actions / Jenkins) untuk
+                      otomatisasi test.
+                    </li>
+                    <li>
+                      Kolaborasi dengan tim dev untuk shift-left testing &
+                      quality gates.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="time">2023 - 2024</div>
+                <div class="content">
+                  <h3>QA Analyst - [Perusahaan B]</h3>
+                  <ul>
+                    <li>
+                      Mendesain test case berbasis risk & requirement
+                      traceability.
+                    </li>
+                    <li>
+                      Melakukan API testing (Postman, Newman) & load test dasar.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="time">Sertifikasi</div>
+                <div class="content">
+                  <h3>ISTQB Foundation</h3>
+                  <p>
+                    Memvalidasi fundamental software testing: teknik desain
+                    test, prinsip kualitas, manajemen testing.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <p class="note">
+              Catatan: Konten dapat diperbarui sesuai detail aktual pengalaman
+              Anda.
+            </p>
+          </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section" data-reveal="up">
+          <div class="container">
+            <h2 class="section-title contact-title">Contact Me</h2>
+            <p class="section-intro contact-desc">
+              Ingin diskusi atau konsultasi 1:1? Silakan isi nomor ponsel Anda
+              terlebih dahulu untuk membuka jadwal booking.
+            </p>
+
+            <form id="preBookingForm" class="pre-booking-form" novalidate>
+              <div class="form-row">
+                <label for="fullName">Nama</label>
+                <input
+                  id="fullName"
+                  name="fullName"
+                  type="text"
+                  placeholder="Nama Anda"
+                  required
+                />
+                <small class="error" data-error-for="fullName"></small>
+              </div>
+              <div class="form-row">
+                <label for="email">Email</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="email@contoh.com"
+                  required
+                />
+                <small class="error" data-error-for="email"></small>
+              </div>
+              <div class="form-row">
+                <label for="phone">Mobile Phone (WA)</label>
+                <input
+                  id="phone"
+                  name="phone"
+                  type="tel"
+                  placeholder="0812xxxxxxx"
+                  required
+                  pattern="^[0-9+ ]{8,20}$"
+                />
+                <small class="error" data-error-for="phone"></small>
+              </div>
+              <div class="form-row">
+                <label for="purpose">Tujuan Singkat</label>
+                <textarea
+                  id="purpose"
+                  name="purpose"
+                  rows="2"
+                  placeholder="Contoh: Diskusi membangun strategi automation"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn primary booking-btn" disabled>
+                Lanjutkan ke Booking
+              </button>
+            </form>
+
+            <div id="bookingWrapper" class="booking-wrapper" hidden>
+              <h3>Pilih Slot Waktu</h3>
+              <p class="smaller">
+                Kalender di bawah ini adalah embed dari Cal.com (ganti
+                placeholder akun Anda di kode). Informasi nomor ponsel akan
+                dikirimkan bersama catatan.
+              </p>
+              <div class="embed-ratio">
+                <iframe
+                  id="calEmbed"
+                  title="Booking 1-on-1"
+                  loading="lazy"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+            <noscript>Aktifkan JavaScript untuk melakukan booking.</noscript>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          © <span id="year"></span> Hendri Christianto. All rights reserved.
+        </div>
+        <div class="socials">
+          <!-- Tambahkan link LinkedIn / GitHub Anda -->
+          <a
+            href="https://www.linkedin.com/in/USERNAME"
+            target="_blank"
+            rel="noopener"
+            aria-label="LinkedIn"
+            >LinkedIn</a
+          >
+          <a
+            href="https://github.com/USERNAME"
+            target="_blank"
+            rel="noopener"
+            aria-label="GitHub"
+            >GitHub</a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
