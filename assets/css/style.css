@@ -140,6 +140,34 @@ body {
   line-height: 1.55;
   -webkit-font-smoothing: antialiased;
 }
+.photo-profile {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #8594a8;
+  background: transparent;
+  box-shadow: none;
+  display: block;
+  margin: 0 0 24px 0;
+  opacity: 1;
+}
+
+.hero-inner {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+.hero-image {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.hero-text {
+  flex: 1 1 0%;
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -400,7 +428,7 @@ body.light .mode-toggle {
   transform: translateX(-50%);
   font-size: 0.7rem;
   letter-spacing: 0.4px;
-  color: var(--text-faint);
+  color: #2563eb;
   animation: floatY 3.5s ease-in-out infinite;
 }
 @keyframes floatY {
