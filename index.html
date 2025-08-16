@@ -288,76 +288,38 @@
           <div class="container">
             <h2 class="section-title contact-title">Contact Me</h2>
             <p class="section-intro contact-desc">
-              Ingin diskusi atau konsultasi 1:1? Silakan isi nomor ponsel Anda
-              terlebih dahulu untuk membuka jadwal booking.
+              Ingin diskusi atau konsultasi 1:1? Silakan isi data Anda pada
+              Google Form berikut. Setelah submit, Anda akan diarahkan otomatis
+              ke halaman booking Cal.com untuk memilih jadwal.
             </p>
-
-            <form id="preBookingForm" class="pre-booking-form" novalidate>
-              <div class="form-row">
-                <label for="fullName">Nama</label>
-                <input
-                  id="fullName"
-                  name="fullName"
-                  type="text"
-                  placeholder="Nama Anda"
-                  required
-                />
-                <small class="error" data-error-for="fullName"></small>
-              </div>
-              <div class="form-row">
-                <label for="email">Email</label>
-                <input
-                  id="email"
-                  name="email"
-                  type="email"
-                  placeholder="email@contoh.com"
-                  required
-                />
-                <small class="error" data-error-for="email"></small>
-              </div>
-              <div class="form-row">
-                <label for="phone">Mobile Phone (WA)</label>
-                <input
-                  id="phone"
-                  name="phone"
-                  type="tel"
-                  placeholder="0812xxxxxxx"
-                  required
-                  pattern="^[0-9+ ]{8,20}$"
-                />
-                <small class="error" data-error-for="phone"></small>
-              </div>
-              <div class="form-row">
-                <label for="purpose">Tujuan Singkat</label>
-                <textarea
-                  id="purpose"
-                  name="purpose"
-                  rows="2"
-                  placeholder="Contoh: Diskusi membangun strategi automation"
-                ></textarea>
-              </div>
-              <button type="submit" class="btn primary booking-btn" disabled>
-                Lanjutkan ke Booking
-              </button>
-            </form>
-
-            <div id="bookingWrapper" class="booking-wrapper" hidden>
-              <h3>Pilih Slot Waktu</h3>
-              <p class="smaller">
-                Kalender di bawah ini adalah embed dari Cal.com (ganti
-                placeholder akun Anda di kode). Informasi nomor ponsel akan
-                dikirimkan bersama catatan.
-              </p>
-              <div class="embed-ratio">
-                <iframe
-                  id="calEmbed"
-                  title="Booking 1-on-1"
-                  loading="lazy"
-                  allowfullscreen
-                ></iframe>
-              </div>
+            <div
+              class="pre-booking-form"
+              style="max-width: 580px; margin: 0 auto 2.5rem"
+            >
+              <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLSflrZq0-rJZT1zmhlAJxSdMgU_7MAL9OzCr4C-cLYkxvhbrbQ/viewform?usp=dialog"
+                width="100%"
+                height="700"
+                frameborder="0"
+                marginheight="0"
+                marginwidth="0"
+                title="Form Booking QA Mentor"
+                >Memuat…</iframe
+              >
             </div>
-            <noscript>Aktifkan JavaScript untuk melakukan booking.</noscript>
+            <div
+              class="smaller"
+              style="text-align: center; max-width: 580px; margin: 0 auto"
+            >
+              Setelah submit, Anda akan diarahkan ke halaman booking Cal.com.<br />
+              Jika tidak otomatis redirect,
+              <a
+                href="https://cal.com/hendri-christianto/public"
+                target="_blank"
+                rel="noopener"
+                >klik di sini untuk booking jadwal</a
+              >.
+            </div>
           </div>
         </section>
       </div>
