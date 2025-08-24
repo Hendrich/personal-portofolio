@@ -10,12 +10,28 @@ const langData = {
       "Beberapa contoh pekerjaan / eksperimen saya serta template automation testing gratis yang bisa Anda unduh.",
     detail: "Detail",
     download: "Download",
-    expTitle:
+    expHeading: "Pengalaman",
+    expIntro:
       "Ringkasan perjalanan profesional saya di bidang Quality Assurance.",
     contactTitle: "Contact Me",
     contactDesc:
       "Ingin diskusi atau konsultasi 1:1? Silakan isi nomor ponsel Anda terlebih dahulu untuk membuka jadwal booking.",
     bookingBtn: "Lanjutkan ke Booking",
+    bookingMsg:
+      "Setelah submit, Anda akan diarahkan ke halaman booking Cal.com.<br />",
+    bookingRedirect: "Jika tidak otomatis redirect, ",
+    bookingLink: "klik di sini untuk booking jadwal",
+    project1Title: "Automation Framework: Playwright (JS)",
+    project1Desc:
+      "Contoh struktur dasar automation UI + API menggunakan Playwright + laporan sederhana.",
+    exp1Time: "2024 - Sekarang",
+    exp1Job: "Quality Assurance Engineer - [Perusahaan A]",
+    exp1Desc1:
+      "Membangun & memelihara test automation (UI + API) yang mengurangi waktu regression >50%.",
+    exp1Desc2:
+      "Integrasi pipeline CI/CD (GitHub Actions / Jenkins) untuk otomatisasi test.",
+    exp1Desc3:
+      "Kolaborasi dengan tim dev untuk shift-left testing & quality gates.",
   },
   en: {
     homeTitle: "Hi, I'm Hendri Christianto",
@@ -28,11 +44,27 @@ const langData = {
       "Some of my work samples / experiments and free automation testing templates you can download.",
     detail: "Detail",
     download: "Download",
-    expTitle: "My professional journey in Quality Assurance.",
+    expHeading: "Experiences",
+    expIntro: "My professional journey in Quality Assurance.",
     contactTitle: "Contact Me",
     contactDesc:
       "Want to discuss or consult 1:1? Please enter your phone number first to open the booking schedule.",
     bookingBtn: "Continue to Booking",
+    bookingMsg:
+      "After submitting, you will be redirected to the Cal.com booking page.<br />",
+    bookingRedirect: "If you are not automatically redirected, ",
+    bookingLink: "click here to book a schedule",
+    project1Title: "Automation Framework: Playwright (JS)",
+    project1Desc:
+      "Basic structure for UI + API automation using Playwright + simple reporting.",
+    exp1Time: "2024 - Present",
+    exp1Job: "Quality Assurance Engineer - [Company A]",
+    exp1Desc1:
+      "Built & maintained test automation (UI + API) reducing regression time by >50%.",
+    exp1Desc2:
+      "Integrated CI/CD pipeline (GitHub Actions / Jenkins) for automated testing.",
+    exp1Desc3:
+      "Collaborated with dev team for shift-left testing & quality gates.",
   },
 };
 
@@ -63,9 +95,27 @@ function setLang(lang) {
   document
     .querySelectorAll(".btn-download")
     .forEach((btn) => (btn.textContent = langData[lang].download));
+  // Project 1 (card)
+  const project1Title = document.querySelector(".project-title-1");
+  if (project1Title) project1Title.textContent = langData[lang].project1Title;
+  const project1Desc = document.querySelector(".project-desc-1");
+  if (project1Desc) project1Desc.textContent = langData[lang].project1Desc;
   // Experience
   const expTitle = document.querySelector(".exp-title");
-  if (expTitle) expTitle.textContent = langData[lang].expTitle;
+  if (expTitle) expTitle.textContent = langData[lang].expHeading;
+  const expIntro = document.querySelector(".exp-desc");
+  if (expIntro) expIntro.textContent = langData[lang].expIntro;
+  // Experience 1
+  const exp1Time = document.querySelector(".exp-time-1");
+  if (exp1Time) exp1Time.textContent = langData[lang].exp1Time;
+  const exp1Job = document.querySelector(".exp-job-1");
+  if (exp1Job) exp1Job.textContent = langData[lang].exp1Job;
+  const exp1Desc1 = document.querySelector(".exp-desc-1-1");
+  if (exp1Desc1) exp1Desc1.textContent = langData[lang].exp1Desc1;
+  const exp1Desc2 = document.querySelector(".exp-desc-1-2");
+  if (exp1Desc2) exp1Desc2.textContent = langData[lang].exp1Desc2;
+  const exp1Desc3 = document.querySelector(".exp-desc-1-3");
+  if (exp1Desc3) exp1Desc3.textContent = langData[lang].exp1Desc3;
   // Contact
   const contactTitle = document.querySelector(".contact-title");
   if (contactTitle) contactTitle.textContent = langData[lang].contactTitle;
@@ -73,6 +123,14 @@ function setLang(lang) {
   if (contactDesc) contactDesc.textContent = langData[lang].contactDesc;
   const bookingBtn = document.querySelector(".booking-btn");
   if (bookingBtn) bookingBtn.textContent = langData[lang].bookingBtn;
+  // Booking info (under form)
+  const bookingMsg = document.querySelector(".booking-msg");
+  if (bookingMsg) bookingMsg.innerHTML = langData[lang].bookingMsg;
+  const bookingRedirect = document.querySelector(".booking-redirect");
+  if (bookingRedirect)
+    bookingRedirect.innerHTML = langData[lang].bookingRedirect;
+  const bookingLink = document.querySelector(".booking-link");
+  if (bookingLink) bookingLink.textContent = langData[lang].bookingLink;
 }
 
 document.addEventListener("DOMContentLoaded", () => {

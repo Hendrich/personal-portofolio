@@ -1,0 +1,16 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none"
+  xmlns="http://www.w3.org/2000/svg">
+  <!-- Outer 'Q' as a Magnifying Glass -->
+  <!-- Circle part of 'Q' (the lens) -->
+  <circle cx="90" cy="90" r="60" stroke="#2C3E50" stroke-width="15" fill="none"/>
+  <!-- Handle/tail part of 'Q' -->
+  <path d="M130 130 L170 170" stroke="#2C3E50" stroke-width="15" stroke-linecap="round"/>
+
+  <!-- Inner 'A' - positioned inside the 'Q' circle, appearing magnified -->
+  <!-- Left leg of 'A' -->
+  <path d="M70 120 L90 50" stroke="#27AE60" stroke-width="12" stroke-linecap="round"/>
+  <!-- Right leg of 'A' -->
+  <path d="M90 50 L110 120" stroke="#27AE60" stroke-width="12" stroke-linecap="round"/>
+  <!-- Crossbar of 'A' -->
+  <path d="M78 95 L102 95" stroke="#27AE60" stroke-width="10" stroke-linecap="round"/>
+</svg>
