@@ -1,8 +1,9 @@
-## Portfolio QA (ISTQB)
 
-Static website portfolio untuk menampilkan profil, projects, pengalaman, dan booking sesi 1:1.
+# QA Portfolio (ISTQB)
 
-### Struktur
+Static website portfolio to showcase your profile, projects, experience, and 1:1 booking.
+
+### Structure
 
 ```
 index.html
@@ -14,11 +15,12 @@ templates/
 		playwright-js/
 		selenium-java/
 		postman-api/
+		cypress-js/
 ```
 
-### Menjalankan Secara Lokal
+### Running Locally
 
-Karena ini static site, cukup buka `index.html` di browser atau gunakan server sederhana.
+Since this is a static site, simply open `index.html` in your browser or use a simple local server.
 
 PowerShell (Windows):
 
@@ -27,33 +29,34 @@ cd d:\personal-portofolio
 python -m http.server 8000
 ```
 
-Lalu buka http://localhost:8000
+Then open http://localhost:8000
 
-### Integrasi Cal.com
+### Cal.com Integration
 
-1. Buat / login akun di https://cal.com
-2. Catat username Anda (misal: `hendrichqa`).
-3. (Opsional) Buat Event Type khusus 1:1.
-4. Di Event Type, tambahkan custom question: `Mobile Phone` tipe Single-line Text dan tandai Required.
-5. Buka `assets/js/main.js` dan ganti:
-   ```js
-   const calUsername = "your-username";
-   const eventType = ""; // bila ingin spesifik isi ID event type.
-   ```
-6. Simpan dan refresh halaman. Form pra-booking akan memprefill name/email & menaruh phone di notes.
+1. Create or log in to your account at https://cal.com
+2. Note your username (e.g., `hendrichqa`).
+3. (Optional) Create a dedicated 1:1 Event Type.
+4. In the Event Type, add a custom question: `Mobile Phone` (Single-line Text, Required).
+5. Open `assets/js/main.js` and update:
+	 ```js
+	 const calUsername = "your-username";
+	 const eventType = ""; // fill with event type ID if needed.
+	 ```
+6. Save and refresh the page. The pre-booking form will prefill name/email & put phone in notes.
 
-### Personalisasi
+### Personalization
 
-Cari placeholder `[Nama Anda]`, `USERNAME`, atau teks pengalaman di `index.html` dan sesuaikan.
+Find and replace placeholders like `[Your Name]`, `USERNAME`, or experience text in `index.html` as needed.
 
-### Template Automation
+### Automation Templates
 
 - Playwright JavaScript: `templates/automation/playwright-js/`
 - Selenium + TestNG Java: `templates/automation/selenium-java/`
 - Postman Collection: `templates/automation/postman-api/`
+- Cypress JavaScript: `templates/automation/cypress-js/`
 
-Anda bisa menambahkan project lain dengan meniru struktur kartu di bagian Projects (`index.html`).
+You can add other projects by copying the card structure in the Projects section (`index.html`).
 
-### Lisensi
+### License
 
-Silakan gunakan & modifikasi bebas (MIT – tambahkan file LICENSE bila diperlukan).
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
