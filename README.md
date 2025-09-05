@@ -1,4 +1,3 @@
-
 # QA Portfolio (ISTQB)
 
 Static website portfolio to showcase your profile, projects, experience, and 1:1 booking.
@@ -27,6 +26,7 @@ PowerShell (Windows):
 ```powershell
 cd d:\personal-portofolio
 python -m http.server 8000
+npx serve -l 8000
 ```
 
 Then open http://localhost:8000
@@ -38,10 +38,10 @@ Then open http://localhost:8000
 3. (Optional) Create a dedicated 1:1 Event Type.
 4. In the Event Type, add a custom question: `Mobile Phone` (Single-line Text, Required).
 5. Open `assets/js/main.js` and update:
-	 ```js
-	 const calUsername = "your-username";
-	 const eventType = ""; // fill with event type ID if needed.
-	 ```
+   ```js
+   const calUsername = "your-username";
+   const eventType = ""; // fill with event type ID if needed.
+   ```
 6. Save and refresh the page. The pre-booking form will prefill name/email & put phone in notes.
 
 ### Personalization
