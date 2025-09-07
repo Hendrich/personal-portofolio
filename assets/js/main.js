@@ -47,14 +47,46 @@ const langData = {
     project4B1: "Website Script Labs",
     project4B2: "Struktur Node.js + React sederhana",
     project4B3: "CRUD API dengan Express + Supabase",
-    exp1Time: "2024 - Sekarang",
-    exp1Job: "Quality Assurance Engineer - [Perusahaan A]",
+    exp1Time: "Sep 2019 - Sekarang",
+    exp1Job:
+      "Senior Software Quality Assurance Engineer - KB Finansia Multifinance",
     exp1Desc1:
-      "Membangun & memelihara test automation (UI + API) yang mengurangi waktu regression >50%.",
+      "Memimpin strategi QA end-to-end & automation (UI/API) yang memangkas siklus regression >50%.",
     exp1Desc2:
-      "Integrasi pipeline CI/CD (GitHub Actions / Jenkins) untuk otomatisasi test.",
+      "Menerapkan quality gates di CI/CD (GitHub Actions / Jenkins) dengan prioritas test berbasis risiko.",
     exp1Desc3:
-      "Kolaborasi dengan tim dev untuk shift-left testing & quality gates.",
+      "Membimbing tim QA & kolaborasi lintas fungsi untuk shift-left dan meningkatkan confidence rilis.",
+    exp2Time: "Jan 2019 - Sep 2019",
+    exp2Job: "QA Analyst - Emerio Indonesia (Client: Bank BCA)",
+    exp2Desc1:
+      "Mendesain skenario test berbasis risiko & traceability requirement untuk modul perbankan.",
+    exp2Desc2:
+      "Melakukan API testing & basic performance check; mendokumentasikan defect dengan jelas.",
+    exp2Desc3:
+      "Kolaborasi dengan developer & BA mempercepat turnaround perbaikan bug.",
+    exp3Time: "Jan 2018 - Dec 2018",
+    exp3Job: "QA Engineer - PT. Adi Data Informatika (Client: Bank Mandiri)",
+    exp3Desc1:
+      "Menjalankan siklus functional & regression testing fitur inti perbankan di lingkungan klien.",
+    exp3Desc2:
+      "Merapikan repositori test case & meningkatkan klasifikasi defect untuk analisis akar masalah.",
+    exp3Desc3: "Dukungan UAT & knowledge transfer ke stakeholder bisnis.",
+    exp4Time: "Jan 2017 - Jan 2018",
+    exp4Job: "QA Analyst - Lawencon Internasional (Project Bank BRI)",
+    exp4Desc1:
+      "Menjalankan manual & exploratory testing aplikasi finansial & internal.",
+    exp4Desc2:
+      "Membangun baseline metrik (coverage, defect density) guna pengambilan keputusan manajemen.",
+    exp4Desc3:
+      "Mendefinisikan kriteria kesiapan rilis meningkatkan prediktabilitas deployment.",
+    exp5Time: "Sep 2013 - Aug 2016",
+    exp5Job: "System Analyst - Orang Tua Group",
+    exp5Desc1:
+      "Analisis requirement & pembuatan spesifikasi fungsional untuk sistem enterprise (Oracle EBS).",
+    exp5Desc2:
+      "Dukungan pengguna, root cause analysis & optimasi laporan operasional.",
+    exp5Desc3:
+      "Koordinasi perubahan lintas departemen mempercepat waktu penyelesaian permintaan.",
   },
   en: {
     homeTitle: "Hi, I'm Hendri Christianto",
@@ -103,14 +135,47 @@ const langData = {
     project4B1: "Website Script Labs",
     project4B2: "Struktur Node.js + React sederhana",
     project4B3: "CRUD API dengan Express + Supabase",
-    exp1Time: "2024 - Present",
-    exp1Job: "Quality Assurance Engineer - [Company A]",
+    exp1Time: "Sep 2019 - Present",
+    exp1Job:
+      "Senior Software Quality Assurance Engineer - KB Finansia Multifinance",
     exp1Desc1:
-      "Built & maintained test automation (UI + API) reducing regression time by >50%.",
+      "Led end-to-end QA strategy & UI/API automation reducing regression cycle by over 50%.",
     exp1Desc2:
-      "Integrated CI/CD pipeline (GitHub Actions / Jenkins) for automated testing.",
+      "Implemented CI/CD quality gates (GitHub Actions / Jenkins) with risk-based test prioritization.",
     exp1Desc3:
-      "Collaborated with dev team for shift-left testing & quality gates.",
+      "Mentored QA team & drove cross-functional shift-left improving release confidence.",
+    exp2Time: "Jan 2019 - Sep 2019",
+    exp2Job: "QA Analyst - Emerio Indonesia (Client: Bank BCA)",
+    exp2Desc1:
+      "Designed risk-based, requirements-traceable test scenarios for banking modules.",
+    exp2Desc2:
+      "Performed API testing & basic performance checks; logged actionable defects with clear reproduction.",
+    exp2Desc3:
+      "Coordinated with developers & BAs to accelerate defect turnaround time.",
+    exp3Time: "Jan 2018 - Dec 2018",
+    exp3Job: "QA Engineer - PT. Adi Data Informatika (Client: Bank Mandiri)",
+    exp3Desc1:
+      "Executed functional & regression test cycles for core banking features at client site.",
+    exp3Desc2:
+      "Introduced structured test case repository & improved defect classification for RCA.",
+    exp3Desc3:
+      "Supported UAT and knowledge transfer sessions with business stakeholders.",
+    exp4Time: "Jan 2017 - Jan 2018",
+    exp4Job: "QA Analyst - Lawencon Internasional (Project Bank BRI)",
+    exp4Desc1:
+      "Conducted manual & exploratory testing for financial and internal applications.",
+    exp4Desc2:
+      "Established baseline metrics (coverage, defect density) informing management decisions.",
+    exp4Desc3:
+      "Defined release readiness criteria improving deployment predictability.",
+    exp5Time: "Sep 2013 - Aug 2016",
+    exp5Job: "System Analyst - Orang Tua Group",
+    exp5Desc1:
+      "Analyzed user requirements & produced functional specs for enterprise systems (Oracle EBS).",
+    exp5Desc2:
+      "Provided user support, root cause analysis, and operational reporting improvements.",
+    exp5Desc3:
+      "Coordinated cross-department change requests reducing turnaround time.",
   },
 };
 
@@ -186,17 +251,20 @@ function setLang(lang) {
   if (expTitle) expTitle.textContent = langData[lang].expHeading;
   const expIntro = document.querySelector(".exp-desc");
   if (expIntro) expIntro.textContent = langData[lang].expIntro;
-  // Experience 1
-  const exp1Time = document.querySelector(".exp-time-1");
-  if (exp1Time) exp1Time.textContent = langData[lang].exp1Time;
-  const exp1Job = document.querySelector(".exp-job-1");
-  if (exp1Job) exp1Job.textContent = langData[lang].exp1Job;
-  const exp1Desc1 = document.querySelector(".exp-desc-1-1");
-  if (exp1Desc1) exp1Desc1.textContent = langData[lang].exp1Desc1;
-  const exp1Desc2 = document.querySelector(".exp-desc-1-2");
-  if (exp1Desc2) exp1Desc2.textContent = langData[lang].exp1Desc2;
-  const exp1Desc3 = document.querySelector(".exp-desc-1-3");
-  if (exp1Desc3) exp1Desc3.textContent = langData[lang].exp1Desc3;
+  // Experiences loop (1..5)
+  for (let i = 1; i <= 5; i++) {
+    const timeEl = document.querySelector(`.exp-time-${i}`);
+    const jobEl = document.querySelector(`.exp-job-${i}`);
+    if (timeEl && langData[lang][`exp${i}Time`])
+      timeEl.textContent = langData[lang][`exp${i}Time`];
+    if (jobEl && langData[lang][`exp${i}Job`])
+      jobEl.textContent = langData[lang][`exp${i}Job`];
+    for (let d = 1; d <= 3; d++) {
+      const descEl = document.querySelector(`.exp-desc-${i}-${d}`);
+      if (descEl && langData[lang][`exp${i}Desc${d}`])
+        descEl.textContent = langData[lang][`exp${i}Desc${d}`];
+    }
+  }
   // Contact
   const contactTitle = document.querySelector(".contact-title");
   if (contactTitle) contactTitle.textContent = langData[lang].contactTitle;
