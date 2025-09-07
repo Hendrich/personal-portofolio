@@ -12,6 +12,6 @@ public class ExampleTest extends BaseTest {
         String title = new ExamplePage(driver)
                 .open()
                 .getTitle();
-        Assert.assertTrue(title.contains("Example"), "Title should contain 'Example'");
+        Assert.assertTrue(title.toLowerCase().contains("script"), "Title should contain 'Script'");
     }
 }

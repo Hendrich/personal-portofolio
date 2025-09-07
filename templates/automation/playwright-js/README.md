@@ -17,17 +17,21 @@ tests/
   example.spec.js
 ```
 
-## Cara Pakai
+## Menjalankan Test ke https://labs.hendri.me/
 
 1. Install dependencies:
    ```bash
    npm install
    ```
-2. Jalankan test:
+2. Jalankan test (default akan mencari file di folder `tests`):
    ```bash
    npx playwright test
    ```
-3. Buka report:
+3. Contoh visit:
+   ```js
+   await page.goto("https://labs.hendri.me/");
+   ```
+4. Buka report:
    ```bash
    npx playwright show-report
    ```

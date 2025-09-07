@@ -19,12 +19,20 @@ src/test/java/
 testng.xml
 ```
 
-## Cara Pakai
+## Menjalankan Test ke https://labs.hendri.me/
 
 1. Jalankan build & test:
-   ```bash
-   mvn test
-   ```
-2. Tambah test baru di folder `tests`.
+
+```bash
+mvn test
+```
+
+2. Di dalam test/ page object, gunakan:
+
+```java
+driver.get("https://labs.hendri.me/");
+```
+
+3. Tambah test baru di folder `tests`.
 
 Silakan tingkatkan sesuai kebutuhan (report, parallel, dll).

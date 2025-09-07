@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 
 public class ExamplePage {
     private final WebDriver driver;
-    private static final String URL = "https://example.com";
+    private static final String URL = "https://labs.hendri.me";
 
     public ExamplePage(WebDriver driver) {
         this.driver = driver;

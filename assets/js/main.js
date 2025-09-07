@@ -10,6 +10,7 @@ const langData = {
       "Beberapa contoh pekerjaan / eksperimen saya serta template automation testing gratis yang bisa Anda unduh.",
     detail: "Detail",
     download: "Download",
+    visitSite: "Kunjungi Website",
     expHeading: "Pengalaman",
     expIntro:
       "Ringkasan perjalanan profesional saya di bidang Quality Assurance.",
@@ -21,9 +22,31 @@ const langData = {
       "Setelah submit, Anda akan diarahkan ke halaman booking Cal.com.<br />",
     bookingRedirect: "Jika tidak otomatis redirect, ",
     bookingLink: "klik di sini untuk booking jadwal",
-    project1Title: "Automation Framework: Playwright (JS)",
+    project1Title: "Automation Cypress (JS)",
     project1Desc:
+      "Contoh struktur dasar automation UI + API menggunakan Cypress + laporan sederhana.",
+    project2Title: "Automation Playwright (JS)",
+    project2Desc:
       "Contoh struktur dasar automation UI + API menggunakan Playwright + laporan sederhana.",
+    project3Title: "Automation Selenium + TestNG (Java)",
+    project3Desc:
+      "Kerangka minimal untuk UI regression dengan Selenium, TestNG & reporting.",
+    project4Title: "Website Script Labs",
+    project4Desc:
+      "Website Script Labs adalah aplikasi sandbox / latihan untuk QA membangun & mengeksplor automation (UI & API) serta skenario pengujian lain secara aman. Menyediakan elemen dinamis, form, dan endpoint API realistis sebagai target latihan.",
+    // Project bullets
+    project1B1: "Page Object Model dasar",
+    project1B2: "Config environment",
+    project1B3: "Contoh test API sederhana",
+    project2B1: "Page Object Model dasar",
+    project2B2: "Config environment",
+    project2B3: "Contoh test API sederhana",
+    project3B1: "Base test class",
+    project3B2: "Driver management",
+    project3B3: "Sample assertion",
+    project4B1: "Contoh GET request",
+    project4B2: "Struktur feature & runner JUnit5",
+    project4B3: "Pola mudah diperluas untuk auth / variabel",
     exp1Time: "2024 - Sekarang",
     exp1Job: "Quality Assurance Engineer - [Perusahaan A]",
     exp1Desc1:
@@ -44,6 +67,7 @@ const langData = {
       "Some of my work samples / experiments and free automation testing templates you can download.",
     detail: "Detail",
     download: "Download",
+    visitSite: "Visit Website",
     expHeading: "Experiences",
     expIntro: "My professional journey in Quality Assurance.",
     contactTitle: "Contact Me",
@@ -54,9 +78,31 @@ const langData = {
       "After submitting, you will be redirected to the Cal.com booking page.<br />",
     bookingRedirect: "If you are not automatically redirected, ",
     bookingLink: "click here to book a schedule",
-    project1Title: "Automation Framework: Playwright (JS)",
+    project1Title: "Automation Cypress (JS)",
     project1Desc:
+      "Basic structure for UI + API automation using Cypress + simple reporting.",
+    project2Title: "Automation Playwright (JS)",
+    project2Desc:
       "Basic structure for UI + API automation using Playwright + simple reporting.",
+    project3Title: "Automation Selenium + TestNG (Java)",
+    project3Desc:
+      "Minimal framework for UI regression with Selenium, TestNG & reporting.",
+    project4Title: "Website Script Labs",
+    project4Desc:
+      "Website Script Labs is a sandbox practice web app for QA engineers to build and explore automation (UI & API) and other test scenarios safely. It provides dynamic elements, forms, and realistic API endpoints as training targets.",
+    // Project bullets
+    project1B1: "Basic Page Object Model",
+    project1B2: "Environment config",
+    project1B3: "Simple API test example",
+    project2B1: "Basic Page Object Model",
+    project2B2: "Environment config",
+    project2B3: "Simple API test example",
+    project3B1: "Base test class",
+    project3B2: "Driver management",
+    project3B3: "Sample assertion",
+    project4B1: "Sample GET request",
+    project4B2: "Feature structure & JUnit5 runner",
+    project4B3: "Easily extensible pattern for auth / variables",
     exp1Time: "2024 - Present",
     exp1Job: "Quality Assurance Engineer - [Company A]",
     exp1Desc1:
@@ -95,11 +141,46 @@ function setLang(lang) {
   document
     .querySelectorAll(".btn-download")
     .forEach((btn) => (btn.textContent = langData[lang].download));
+  // Specific visit site buttons (e.g., project 4)
+  document
+    .querySelectorAll(".btn-visit-site")
+    .forEach((btn) => (btn.textContent = langData[lang].visitSite));
   // Project 1 (card)
   const project1Title = document.querySelector(".project-title-1");
   if (project1Title) project1Title.textContent = langData[lang].project1Title;
   const project1Desc = document.querySelector(".project-desc-1");
   if (project1Desc) project1Desc.textContent = langData[lang].project1Desc;
+  const project2Title = document.querySelector(".project-title-2");
+  if (project2Title) project2Title.textContent = langData[lang].project2Title;
+  const project2Desc = document.querySelector(".project-desc-2");
+  if (project2Desc) project2Desc.textContent = langData[lang].project2Desc;
+  const project3Title = document.querySelector(".project-title-3");
+  if (project3Title) project3Title.textContent = langData[lang].project3Title;
+  const project3Desc = document.querySelector(".project-desc-3");
+  if (project3Desc) project3Desc.textContent = langData[lang].project3Desc;
+  const project4Title = document.querySelector(".project-title-4");
+  if (project4Title) project4Title.textContent = langData[lang].project4Title;
+  const project4Desc = document.querySelector(".project-desc-4");
+  if (project4Desc) project4Desc.textContent = langData[lang].project4Desc;
+  // Project bullets
+  const mapBullets = [
+    ["project1-b1", "project1B1"],
+    ["project1-b2", "project1B2"],
+    ["project1-b3", "project1B3"],
+    ["project2-b1", "project2B1"],
+    ["project2-b2", "project2B2"],
+    ["project2-b3", "project2B3"],
+    ["project3-b1", "project3B1"],
+    ["project3-b2", "project3B2"],
+    ["project3-b3", "project3B3"],
+    ["project4-b1", "project4B1"],
+    ["project4-b2", "project4B2"],
+    ["project4-b3", "project4B3"],
+  ];
+  mapBullets.forEach(([cls, key]) => {
+    const el = document.querySelector(`.${cls}`);
+    if (el && langData[lang][key]) el.textContent = langData[lang][key];
+  });
   // Experience
   const expTitle = document.querySelector(".exp-title");
   if (expTitle) expTitle.textContent = langData[lang].expHeading;
