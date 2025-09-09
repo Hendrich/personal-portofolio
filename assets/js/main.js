@@ -352,15 +352,36 @@ document.addEventListener("DOMContentLoaded", () => {
   // Mobile nav
   const nav = document.getElementById("mainNav");
   const toggle = document.getElementById("navToggle");
+  const navOverlay = document.querySelector(".nav-overlay");
   if (toggle && nav) {
     toggle.addEventListener("click", () => {
+      const willOpen = !nav.classList.contains("open");
       nav.classList.toggle("open");
       document.body.classList.toggle("nav-open");
+      toggle.classList.toggle("active", willOpen);
+      toggle.setAttribute("aria-expanded", willOpen ? "true" : "false");
+      if (nav.classList.contains("open")) {
+        if (navOverlay) navOverlay.style.display = "block";
+      } else {
+        if (navOverlay) navOverlay.style.display = "none";
+      }
     });
+    if (navOverlay) {
+      navOverlay.addEventListener("click", () => {
+        nav.classList.remove("open");
+        document.body.classList.remove("nav-open");
+        navOverlay.style.display = "none";
+        toggle.classList.remove("active");
+        toggle.setAttribute("aria-expanded", "false");
+      });
+    }
     nav.querySelectorAll("a").forEach((a) =>
       a.addEventListener("click", () => {
         nav.classList.remove("open");
         document.body.classList.remove("nav-open");
+        if (navOverlay) navOverlay.style.display = "none";
+        toggle.classList.remove("active");
+        toggle.setAttribute("aria-expanded", "false");
       })
     );
   }
