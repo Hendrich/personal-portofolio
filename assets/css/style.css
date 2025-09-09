@@ -397,7 +397,11 @@ body.light .mode-toggle {
 @media (max-width: 880px) {
   html,
   body {
-    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip; /* stronger for some webviews (incl. Instagram) */
+    overscroll-behavior-x: none; /* prevent horizontal overscroll */
+    touch-action: pan-y; /* restrict to vertical panning */
   }
   .nav {
     position: fixed;
@@ -412,21 +416,23 @@ body.light .mode-toggle {
     border-left: 1px solid var(--border);
     padding: 6rem 1.75rem 2rem;
     box-shadow: -8px 0 24px -12px rgba(0, 0, 0, 0.4);
-    transform: translateX(110%);
-    transition: transform 0.45s var(--easing);
+    transform: translate3d(100%, 0, 0); /* keep fully off-screen */
+    transition: transform 0.45s var(--easing), visibility 0s linear 0.45s;
     overflow-y: auto;
     z-index: 200;
     will-change: transform;
     visibility: hidden;
     pointer-events: none;
+    contain: layout paint size; /* isolate paint to avoid peek */
   }
   body.light .nav {
     box-shadow: -6px 0 18px -10px rgba(0, 0, 0, 0.15);
   }
   .nav.open {
-    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
     visibility: visible;
     pointer-events: auto;
+    transition: transform 0.45s var(--easing), visibility 0s;
   }
   .nav a {
     margin: 0 0 1.2rem;
@@ -447,10 +453,13 @@ body.light .mode-toggle {
     inset: 0;
     background: rgba(0, 0, 0, 0.25);
     z-index: 150;
-    display: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
   }
   body.nav-open .nav-overlay {
-    display: block;
+    opacity: 1;
+    pointer-events: auto;
   }
   body.nav-open {
     overflow: hidden;
