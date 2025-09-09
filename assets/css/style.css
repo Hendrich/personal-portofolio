@@ -420,10 +420,12 @@ body.light .mode-toggle {
     transition: transform 0.45s var(--easing), visibility 0s linear 0.45s;
     overflow-y: auto;
     z-index: 200;
-    will-change: transform;
+    will-change: transform, clip-path;
     visibility: hidden;
     pointer-events: none;
     contain: layout paint size; /* isolate paint to avoid peek */
+    /* Extra guard for stubborn webviews (Instagram, FB): fully clip when closed */
+    clip-path: inset(0 0 0 100%);
   }
   body.light .nav {
     box-shadow: -6px 0 18px -10px rgba(0, 0, 0, 0.15);
@@ -433,6 +435,7 @@ body.light .mode-toggle {
     visibility: visible;
     pointer-events: auto;
     transition: transform 0.45s var(--easing), visibility 0s;
+    clip-path: inset(0 0 0 0);
   }
   .nav a {
     margin: 0 0 1.2rem;
