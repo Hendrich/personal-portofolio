@@ -1,40 +1,31 @@
 const langData = {
   id: {
     homeTitle: "Hai, saya Hendri Christianto",
-    homeDesc:
-      "Seorang Quality Assurance Engineer dengan sertifikasi ISTQB. Fokus pada test automation, peningkatan kualitas produk, dan continuous improvement.",
+    homeDesc: "Seorang Quality Assurance Engineer dengan sertifikasi ISTQB. Fokus pada test automation, peningkatan kualitas produk, dan continuous improvement.",
     homeBtn: "Booking 1:1",
     homeProjects: "Lihat Projects",
     projectsTitle: "Projects & Templates",
-    projectsDesc:
-      "Beberapa contoh pekerjaan / eksperimen saya serta template automation testing gratis yang bisa Anda unduh.",
+    projectsDesc: "Beberapa contoh pekerjaan / eksperimen saya serta template automation testing gratis yang bisa Anda unduh.",
     detail: "Detail",
     close: "Tutup",
     download: "Download",
     visitSite: "Kunjungi Website",
     expHeading: "Pengalaman",
-    expIntro:
-      "Ringkasan perjalanan profesional saya di bidang Quality Assurance.",
+    expIntro: "Ringkasan perjalanan profesional saya di bidang Quality Assurance.",
     contactTitle: "Contact Me",
-    contactDesc:
-      "Ingin diskusi atau konsultasi 1:1? Silakan isi nomor ponsel Anda terlebih dahulu untuk membuka jadwal booking.",
+    contactDesc: "Ingin diskusi atau konsultasi 1:1? Silakan isi nomor ponsel Anda terlebih dahulu untuk membuka jadwal booking.",
     bookingBtn: "Lanjutkan ke Booking",
-    bookingMsg:
-      "Setelah submit, Anda akan diarahkan ke halaman booking Cal.com.<br />",
+    bookingMsg: "Setelah submit, Anda akan diarahkan ke halaman booking Cal.com.<br />",
     bookingRedirect: "Jika tidak otomatis redirect, ",
     bookingLink: "klik di sini untuk booking jadwal",
     project1Title: "Automation Cypress (JS)",
-    project1Desc:
-      "Contoh struktur dasar automation UI + API menggunakan Cypress + laporan sederhana.",
+    project1Desc: "Contoh struktur dasar automation UI + API menggunakan Cypress + laporan sederhana.",
     project2Title: "Automation Playwright (JS)",
-    project2Desc:
-      "Contoh struktur dasar automation UI + API menggunakan Playwright + laporan sederhana.",
+    project2Desc: "Contoh struktur dasar automation UI + API menggunakan Playwright + laporan sederhana.",
     project3Title: "Automation Selenium + TestNG (Java)",
-    project3Desc:
-      "Kerangka minimal untuk UI regression dengan Selenium, TestNG & reporting.",
+    project3Desc: "Kerangka minimal untuk UI regression dengan Selenium, TestNG & reporting.",
     project4Title: "Website Script Labs",
-    project4Desc:
-      "Website Script Labs adalah aplikasi sandbox / latihan untuk QA membangun & mengeksplor automation (UI & API) serta skenario pengujian lain secara aman. Menyediakan elemen dinamis, form, dan endpoint API realistis sebagai target latihan.",
+    project4Desc: "Website Script Labs adalah aplikasi sandbox / latihan untuk QA membangun & mengeksplor automation (UI & API) serta skenario pengujian lain secara aman. Menyediakan elemen dinamis, form, dan endpoint API realistis sebagai target latihan.",
     project1B1: "Page Object Model dasar",
     project1B2: "Config environment",
     project1B3: "Contoh test API sederhana",
@@ -47,56 +38,51 @@ const langData = {
     project4B1: "Website Script Labs",
     project4B2: "Struktur Node.js + React sederhana",
     project4B3: "CRUD API dengan Express + Supabase",
+    nutrisiTitle: "Nutrisi Bot",
+    nutrisiDesc: "Prototype mobile web / PWA untuk mencatat konsumsi harian, estimasi kalori dan protein, melihat progress target, serta menyiapkan validasi tester bertahap.",
+    nutrisiButton: "Mobile Web",
+    nutrisiB1: "Input teks untuk estimasi kalori dan protein.",
+    nutrisiB2: "Ringkasan target harian, progress, dan riwayat catatan hari ini.",
+    nutrisiB3: "Access code tester dan limit pemakaian AI agar MVP lebih aman diuji.",
+    aiTestcaseTitle: "AI Test Case Generator",
+    aiTestcaseDesc: "Prototype AI QA tool untuk mengubah requirement menjadi acceptance criteria, draft test case, coverage matrix, ambiguity notes, dan export CSV untuk workflow QA manual.",
+    aiTestcaseButton: "Website",
+    aiTestcaseB1: "Menghasilkan acceptance criteria dari requirement eksplisit.",
+    aiTestcaseB2: "Memisahkan test case requirement-based dan assumption-based.",
+    aiTestcaseB3: "Menampilkan coverage matrix dan ambiguity notes untuk mengurangi false confidence.",
     exp1Time: "Sep 2019 - Sekarang",
-    exp1Job:
-      "Senior Software Quality Assurance Engineer - KB Finansia Multifinance",
-    exp1Desc1:
-      "Memimpin strategi QA end-to-end & automation (UI/API) yang memangkas siklus regression >50%.",
-    exp1Desc2:
-      "Menerapkan quality gates di CI/CD (GitHub Actions / Jenkins) dengan prioritas test berbasis risiko.",
-    exp1Desc3:
-      "Membimbing tim QA & kolaborasi lintas fungsi untuk shift-left dan meningkatkan confidence rilis.",
+    exp1Job: "Senior Software Quality Assurance Engineer - KB Finansia Multifinance",
+    exp1Desc1: "Memimpin strategi QA end-to-end & automation (UI/API) yang memangkas siklus regression >50%.",
+    exp1Desc2: "Menerapkan quality gates di CI/CD (GitHub Actions / Jenkins) dengan prioritas test berbasis risiko.",
+    exp1Desc3: "Membimbing tim QA & kolaborasi lintas fungsi untuk shift-left dan meningkatkan confidence rilis.",
     exp2Time: "Jan 2019 - Sep 2019",
     exp2Job: "QA Analyst - Emerio Indonesia (Client: Bank BCA)",
-    exp2Desc1:
-      "Mendesain skenario test berbasis risiko & traceability requirement untuk modul perbankan.",
-    exp2Desc2:
-      "Melakukan API testing & basic performance check; mendokumentasikan defect dengan jelas.",
-    exp2Desc3:
-      "Kolaborasi dengan developer & BA mempercepat turnaround perbaikan bug.",
+    exp2Desc1: "Mendesain skenario test berbasis risiko & traceability requirement untuk modul perbankan.",
+    exp2Desc2: "Melakukan API testing & basic performance check; mendokumentasikan defect dengan jelas.",
+    exp2Desc3: "Kolaborasi dengan developer & BA mempercepat turnaround perbaikan bug.",
     exp3Time: "Jan 2018 - Dec 2018",
     exp3Job: "QA Engineer - PT. Adi Data Informatika (Client: Bank Mandiri)",
-    exp3Desc1:
-      "Menjalankan siklus functional & regression testing fitur inti perbankan di lingkungan klien.",
-    exp3Desc2:
-      "Merapikan repositori test case & meningkatkan klasifikasi defect untuk analisis akar masalah.",
+    exp3Desc1: "Menjalankan siklus functional & regression testing fitur inti perbankan di lingkungan klien.",
+    exp3Desc2: "Merapikan repositori test case & meningkatkan klasifikasi defect untuk analisis akar masalah.",
     exp3Desc3: "Dukungan UAT & knowledge transfer ke stakeholder bisnis.",
     exp4Time: "Jan 2017 - Jan 2018",
     exp4Job: "QA Analyst - Lawencon Internasional (Project Bank BRI)",
-    exp4Desc1:
-      "Menjalankan manual & exploratory testing aplikasi finansial & internal.",
-    exp4Desc2:
-      "Membangun baseline metrik (coverage, defect density) guna pengambilan keputusan manajemen.",
-    exp4Desc3:
-      "Mendefinisikan kriteria kesiapan rilis meningkatkan prediktabilitas deployment.",
+    exp4Desc1: "Menjalankan manual & exploratory testing aplikasi finansial & internal.",
+    exp4Desc2: "Membangun baseline metrik (coverage, defect density) guna pengambilan keputusan manajemen.",
+    exp4Desc3: "Mendefinisikan kriteria kesiapan rilis meningkatkan prediktabilitas deployment.",
     exp5Time: "Sep 2013 - Aug 2016",
     exp5Job: "System Analyst - Orang Tua Group",
-    exp5Desc1:
-      "Analisis requirement & pembuatan spesifikasi fungsional untuk sistem enterprise (Oracle EBS).",
-    exp5Desc2:
-      "Dukungan pengguna, root cause analysis & optimasi laporan operasional.",
-    exp5Desc3:
-      "Koordinasi perubahan lintas departemen mempercepat waktu penyelesaian permintaan.",
+    exp5Desc1: "Analisis requirement & pembuatan spesifikasi fungsional untuk sistem enterprise (Oracle EBS).",
+    exp5Desc2: "Dukungan pengguna, root cause analysis & optimasi laporan operasional.",
+    exp5Desc3: "Koordinasi perubahan lintas departemen mempercepat waktu penyelesaian permintaan.",
   },
   en: {
     homeTitle: "Hi, I'm Hendri Christianto",
-    homeDesc:
-      "A Quality Assurance Engineer with ISTQB certification. Focused on test automation, product quality improvement, and continuous improvement.",
+    homeDesc: "A Quality Assurance Engineer with ISTQB certification. Focused on test automation, product quality improvement, and continuous improvement.",
     homeBtn: "Book 1:1",
     homeProjects: "See Projects",
     projectsTitle: "Projects & Templates",
-    projectsDesc:
-      "Some of my work samples / experiments and free automation testing templates you can download.",
+    projectsDesc: "Some of my work samples / experiments and free automation testing templates you can download.",
     detail: "Detail",
     close: "Close",
     download: "Download",
@@ -104,25 +90,19 @@ const langData = {
     expHeading: "Experiences",
     expIntro: "My professional journey in Quality Assurance.",
     contactTitle: "Contact Me",
-    contactDesc:
-      "Want to discuss or consult 1:1? Please enter your phone number first to open the booking schedule.",
+    contactDesc: "Want to discuss or consult 1:1? Please enter your phone number first to open the booking schedule.",
     bookingBtn: "Continue to Booking",
-    bookingMsg:
-      "After submitting, you will be redirected to the Cal.com booking page.<br />",
+    bookingMsg: "After submitting, you will be redirected to the Cal.com booking page.<br />",
     bookingRedirect: "If you are not automatically redirected, ",
     bookingLink: "click here to book a schedule",
     project1Title: "Automation Cypress (JS)",
-    project1Desc:
-      "Basic structure for UI + API automation using Cypress + simple reporting.",
+    project1Desc: "Basic structure for UI + API automation using Cypress + simple reporting.",
     project2Title: "Automation Playwright (JS)",
-    project2Desc:
-      "Basic structure for UI + API automation using Playwright + simple reporting.",
+    project2Desc: "Basic structure for UI + API automation using Playwright + simple reporting.",
     project3Title: "Automation Selenium + TestNG (Java)",
-    project3Desc:
-      "Minimal framework for UI regression with Selenium, TestNG & reporting.",
+    project3Desc: "Minimal framework for UI regression with Selenium, TestNG & reporting.",
     project4Title: "Website Script Labs",
-    project4Desc:
-      "Website Script Labs is a sandbox practice web app for QA engineers to build and explore automation (UI & API) and other test scenarios safely. It provides dynamic elements, forms, and realistic API endpoints as training targets.",
+    project4Desc: "Website Script Labs is a sandbox practice web app for QA engineers to build and explore automation (UI & API) and other test scenarios safely. It provides dynamic elements, forms, and realistic API endpoints as training targets.",
     project1B1: "Basic Page Object Model",
     project1B2: "Environment config",
     project1B3: "Simple API test example",
@@ -135,47 +115,43 @@ const langData = {
     project4B1: "Website Script Labs",
     project4B2: "Simple Node.js + React structure",
     project4B3: "CRUD API with Express + Supabase",
+    nutrisiTitle: "Nutrisi Bot",
+    nutrisiDesc: "A mobile web / PWA prototype for daily meal tracking, calorie and protein estimation, target progress monitoring, and staged tester validation.",
+    nutrisiButton: "Mobile Web",
+    nutrisiB1: "Text input for calorie and protein estimation.",
+    nutrisiB2: "Daily target summary, progress, and today's meal history.",
+    nutrisiB3: "Tester access codes and daily AI usage limits to make MVP testing safer.",
+    aiTestcaseTitle: "AI Test Case Generator",
+    aiTestcaseDesc: "An AI QA tool prototype that turns requirements into acceptance criteria, draft test cases, a coverage matrix, ambiguity notes, and CSV export for manual QA workflows.",
+    aiTestcaseButton: "Website",
+    aiTestcaseB1: "Generates acceptance criteria from explicit requirements.",
+    aiTestcaseB2: "Separates requirement-based and assumption-based test cases.",
+    aiTestcaseB3: "Shows a coverage matrix and ambiguity notes to reduce false confidence.",
     exp1Time: "Sep 2019 - Present",
-    exp1Job:
-      "Senior Software Quality Assurance Engineer - KB Finansia Multifinance",
-    exp1Desc1:
-      "Led end-to-end QA strategy & UI/API automation reducing regression cycle by over 50%.",
-    exp1Desc2:
-      "Implemented CI/CD quality gates (GitHub Actions / Jenkins) with risk-based test prioritization.",
-    exp1Desc3:
-      "Mentored QA team & drove cross-functional shift-left improving release confidence.",
+    exp1Job: "Senior Software Quality Assurance Engineer - KB Finansia Multifinance",
+    exp1Desc1: "Led end-to-end QA strategy & UI/API automation reducing regression cycle by over 50%.",
+    exp1Desc2: "Implemented CI/CD quality gates (GitHub Actions / Jenkins) with risk-based test prioritization.",
+    exp1Desc3: "Mentored QA team & drove cross-functional shift-left improving release confidence.",
     exp2Time: "Jan 2019 - Sep 2019",
     exp2Job: "QA Analyst - Emerio Indonesia (Client: Bank BCA)",
-    exp2Desc1:
-      "Designed risk-based, requirements-traceable test scenarios for banking modules.",
-    exp2Desc2:
-      "Performed API testing & basic performance checks; logged actionable defects with clear reproduction.",
-    exp2Desc3:
-      "Coordinated with developers & BAs to accelerate defect turnaround time.",
+    exp2Desc1: "Designed risk-based, requirements-traceable test scenarios for banking modules.",
+    exp2Desc2: "Performed API testing & basic performance checks; logged actionable defects with clear reproduction.",
+    exp2Desc3: "Coordinated with developers & BAs to accelerate defect turnaround time.",
     exp3Time: "Jan 2018 - Dec 2018",
     exp3Job: "QA Engineer - PT. Adi Data Informatika (Client: Bank Mandiri)",
-    exp3Desc1:
-      "Executed functional & regression test cycles for core banking features at client site.",
-    exp3Desc2:
-      "Introduced structured test case repository & improved defect classification for RCA.",
-    exp3Desc3:
-      "Supported UAT and knowledge transfer sessions with business stakeholders.",
+    exp3Desc1: "Executed functional & regression test cycles for core banking features at client site.",
+    exp3Desc2: "Introduced structured test case repository & improved defect classification for RCA.",
+    exp3Desc3: "Supported UAT and knowledge transfer sessions with business stakeholders.",
     exp4Time: "Jan 2017 - Jan 2018",
     exp4Job: "QA Analyst - Lawencon Internasional (Project Bank BRI)",
-    exp4Desc1:
-      "Conducted manual & exploratory testing for financial and internal applications.",
-    exp4Desc2:
-      "Established baseline metrics (coverage, defect density) informing management decisions.",
-    exp4Desc3:
-      "Defined release readiness criteria improving deployment predictability.",
+    exp4Desc1: "Conducted manual & exploratory testing for financial and internal applications.",
+    exp4Desc2: "Established baseline metrics (coverage, defect density) informing management decisions.",
+    exp4Desc3: "Defined release readiness criteria improving deployment predictability.",
     exp5Time: "Sep 2013 - Aug 2016",
     exp5Job: "System Analyst - Orang Tua Group",
-    exp5Desc1:
-      "Analyzed user requirements & produced functional specs for enterprise systems (Oracle EBS).",
-    exp5Desc2:
-      "Provided user support, root cause analysis, and operational reporting improvements.",
-    exp5Desc3:
-      "Coordinated cross-department change requests reducing turnaround time.",
+    exp5Desc1: "Analyzed user requirements & produced functional specs for enterprise systems (Oracle EBS).",
+    exp5Desc2: "Provided user support, root cause analysis, and operational reporting improvements.",
+    exp5Desc3: "Coordinated cross-department change requests reducing turnaround time.",
   },
 };
 
@@ -186,50 +162,46 @@ function addPortfolioProjects() {
     "beforeend",
     `
       <article class="project-card project-nutrisi-bot">
-        <h3>Nutrisi Bot</h3>
-        <p>
-          Prototype mobile web / PWA untuk mencatat konsumsi harian, estimasi kalori dan protein,
-          melihat progress target, serta menyiapkan validasi tester bertahap.
-        </p>
-        <div class="tags">
-          <span>PWA</span><span>AI Calorie Tracker</span><span>Node.js</span>
-        </div>
+        <h3 data-i18n="nutrisiTitle">Nutrisi Bot</h3>
+        <p data-i18n="nutrisiDesc"></p>
+        <div class="tags"><span>PWA</span><span>AI Calorie Tracker</span><span>Node.js</span></div>
         <div class="actions">
-          <a class="btn small" href="https://nutrisi-bot.hendri.me/app/" target="_blank" rel="noopener">Mobile Web</a>
+          <a class="btn small" href="https://nutrisi-bot.hendri.me/app/" target="_blank" rel="noopener" data-i18n="nutrisiButton">Mobile Web</a>
           <button class="btn ghost small btn-detail" data-toggle="details">Detail</button>
         </div>
         <div class="details" hidden>
           <ul>
-            <li>Input teks untuk estimasi kalori dan protein.</li>
-            <li>Ringkasan target harian, progress, dan riwayat catatan hari ini.</li>
-            <li>Access code tester dan limit pemakaian AI agar MVP lebih aman diuji.</li>
+            <li data-i18n="nutrisiB1"></li>
+            <li data-i18n="nutrisiB2"></li>
+            <li data-i18n="nutrisiB3"></li>
           </ul>
         </div>
       </article>
-
       <article class="project-card project-ai-testcase">
-        <h3>AI Test Case Generator</h3>
-        <p>
-          Prototype AI QA tool untuk mengubah requirement menjadi acceptance criteria, draft test case,
-          coverage matrix, ambiguity notes, dan export CSV untuk workflow QA manual.
-        </p>
-        <div class="tags">
-          <span>AI QA</span><span>Test Case</span><span>CSV Export</span>
-        </div>
+        <h3 data-i18n="aiTestcaseTitle">AI Test Case Generator</h3>
+        <p data-i18n="aiTestcaseDesc"></p>
+        <div class="tags"><span>AI QA</span><span>Test Case</span><span>CSV Export</span></div>
         <div class="actions">
-          <a class="btn small" href="https://ai-testcase-generator-beige.vercel.app/" target="_blank" rel="noopener">Website</a>
+          <a class="btn small" href="https://ai-testcase-generator-beige.vercel.app/" target="_blank" rel="noopener" data-i18n="aiTestcaseButton">Website</a>
           <button class="btn ghost small btn-detail" data-toggle="details">Detail</button>
         </div>
         <div class="details" hidden>
           <ul>
-            <li>Menghasilkan acceptance criteria dari requirement eksplisit.</li>
-            <li>Memisahkan test case requirement-based dan assumption-based.</li>
-            <li>Menampilkan coverage matrix dan ambiguity notes untuk mengurangi false confidence.</li>
+            <li data-i18n="aiTestcaseB1"></li>
+            <li data-i18n="aiTestcaseB2"></li>
+            <li data-i18n="aiTestcaseB3"></li>
           </ul>
         </div>
       </article>
     `,
   );
+}
+
+function applyI18nText(lang) {
+  document.querySelectorAll("[data-i18n]").forEach((el) => {
+    const key = el.dataset.i18n;
+    if (langData[lang][key]) el.textContent = langData[lang][key];
+  });
 }
 
 function setLang(lang) {
@@ -248,15 +220,9 @@ function setLang(lang) {
   if (projectsTitle) projectsTitle.textContent = langData[lang].projectsTitle;
   const projectsDesc = document.querySelector(".projects-desc");
   if (projectsDesc) projectsDesc.textContent = langData[lang].projectsDesc;
-  document
-    .querySelectorAll(".btn-detail")
-    .forEach((btn) => (btn.textContent = langData[lang].detail));
-  document
-    .querySelectorAll(".btn-download")
-    .forEach((btn) => (btn.textContent = langData[lang].download));
-  document
-    .querySelectorAll(".btn-visit-site")
-    .forEach((btn) => (btn.textContent = langData[lang].visitSite));
+  document.querySelectorAll(".btn-detail").forEach((btn) => (btn.textContent = langData[lang].detail));
+  document.querySelectorAll(".btn-download").forEach((btn) => (btn.textContent = langData[lang].download));
+  document.querySelectorAll(".btn-visit-site").forEach((btn) => (btn.textContent = langData[lang].visitSite));
   for (let i = 1; i <= 4; i++) {
     const title = document.querySelector(`.project-title-${i}`);
     const desc = document.querySelector(`.project-desc-${i}`);
@@ -264,23 +230,16 @@ function setLang(lang) {
     if (desc) desc.textContent = langData[lang][`project${i}Desc`];
   }
   const mapBullets = [
-    ["project1-b1", "project1B1"],
-    ["project1-b2", "project1B2"],
-    ["project1-b3", "project1B3"],
-    ["project2-b1", "project2B1"],
-    ["project2-b2", "project2B2"],
-    ["project2-b3", "project2B3"],
-    ["project3-b1", "project3B1"],
-    ["project3-b2", "project3B2"],
-    ["project3-b3", "project3B3"],
-    ["project4-b1", "project4B1"],
-    ["project4-b2", "project4B2"],
-    ["project4-b3", "project4B3"],
+    ["project1-b1", "project1B1"], ["project1-b2", "project1B2"], ["project1-b3", "project1B3"],
+    ["project2-b1", "project2B1"], ["project2-b2", "project2B2"], ["project2-b3", "project2B3"],
+    ["project3-b1", "project3B1"], ["project3-b2", "project3B2"], ["project3-b3", "project3B3"],
+    ["project4-b1", "project4B1"], ["project4-b2", "project4B2"], ["project4-b3", "project4B3"],
   ];
   mapBullets.forEach(([cls, key]) => {
     const el = document.querySelector(`.${cls}`);
     if (el && langData[lang][key]) el.textContent = langData[lang][key];
   });
+  applyI18nText(lang);
   const expTitle = document.querySelector(".exp-title");
   if (expTitle) expTitle.textContent = langData[lang].expHeading;
   const expIntro = document.querySelector(".exp-desc");
@@ -288,14 +247,11 @@ function setLang(lang) {
   for (let i = 1; i <= 5; i++) {
     const timeEl = document.querySelector(`.exp-time-${i}`);
     const jobEl = document.querySelector(`.exp-job-${i}`);
-    if (timeEl && langData[lang][`exp${i}Time`])
-      timeEl.textContent = langData[lang][`exp${i}Time`];
-    if (jobEl && langData[lang][`exp${i}Job`])
-      jobEl.textContent = langData[lang][`exp${i}Job`];
+    if (timeEl && langData[lang][`exp${i}Time`]) timeEl.textContent = langData[lang][`exp${i}Time`];
+    if (jobEl && langData[lang][`exp${i}Job`]) jobEl.textContent = langData[lang][`exp${i}Job`];
     for (let d = 1; d <= 3; d++) {
       const descEl = document.querySelector(`.exp-desc-${i}-${d}`);
-      if (descEl && langData[lang][`exp${i}Desc${d}`])
-        descEl.textContent = langData[lang][`exp${i}Desc${d}`];
+      if (descEl && langData[lang][`exp${i}Desc${d}`]) descEl.textContent = langData[lang][`exp${i}Desc${d}`];
     }
   }
   const contactTitle = document.querySelector(".contact-title");
@@ -305,8 +261,7 @@ function setLang(lang) {
   const bookingMsg = document.querySelector(".booking-msg");
   if (bookingMsg) bookingMsg.innerHTML = langData[lang].bookingMsg;
   const bookingRedirect = document.querySelector(".booking-redirect");
-  if (bookingRedirect)
-    bookingRedirect.innerHTML = langData[lang].bookingRedirect;
+  if (bookingRedirect) bookingRedirect.innerHTML = langData[lang].bookingRedirect;
   const bookingLink = document.querySelector(".booking-link");
   if (bookingLink) bookingLink.textContent = langData[lang].bookingLink;
 }
@@ -331,7 +286,6 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("langID").onclick = () => setLang("id");
   document.getElementById("langEN").onclick = () => setLang("en");
   setLang(localStorage.getItem("lang") || "id");
-
   const modeToggle = document.getElementById("modeToggle");
   const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
   function setMode(mode) {
@@ -340,33 +294,26 @@ document.addEventListener("DOMContentLoaded", () => {
     if (modeToggle) modeToggle.textContent = mode === "light" ? "🌞" : "🌙";
   }
   if (modeToggle) {
-    let mode =
-      localStorage.getItem("colorMode") || (prefersDark ? "dark" : "light");
+    let mode = localStorage.getItem("colorMode") || (prefersDark ? "dark" : "light");
     setMode(mode);
     modeToggle.addEventListener("click", () => {
       mode = document.body.classList.contains("light") ? "dark" : "light";
       setMode(mode);
     });
   }
-
   const revealTargets = document.querySelectorAll("[data-reveal]");
   if ("IntersectionObserver" in window && revealTargets.length) {
-    const io = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) entry.target.classList.add("in");
-        });
-      },
-      { rootMargin: "0px 0px -10% 0px", threshold: 0.15 },
-    );
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) entry.target.classList.add("in");
+      });
+    }, { rootMargin: "0px 0px -10% 0px", threshold: 0.15 });
     revealTargets.forEach((el) => io.observe(el));
   } else {
     revealTargets.forEach((el) => el.classList.add("in"));
   }
-
   const yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
-
   const nav = document.getElementById("mainNav");
   const toggle = document.getElementById("navToggle");
   const navOverlay = document.querySelector(".nav-overlay");
@@ -388,11 +335,8 @@ document.addEventListener("DOMContentLoaded", () => {
       if (navOverlay) navOverlay.style.display = willOpen ? "block" : "none";
     });
     if (navOverlay) navOverlay.addEventListener("click", closeNav);
-    nav
-      .querySelectorAll("a")
-      .forEach((a) => a.addEventListener("click", closeNav));
+    nav.querySelectorAll("a").forEach((a) => a.addEventListener("click", closeNav));
   }
-
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", (e) => {
       const id = anchor.getAttribute("href");
@@ -405,6 +349,5 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
-
   initProjectDetailToggles();
 });
